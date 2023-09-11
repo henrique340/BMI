@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site para o Computador</title>
+    <style>
+
+:root{
+  --escuro: #253347;
+  --cinza: #5e6e85;
+  --branco: #fff;
+  --blue: #345ff6;
+  --rosa: #D8E2E7
+}
+html{
+  background-color: #ffffff;
+}
+body{
+  background-color: var(--branco);
+  font-family: Inter;
+}
+
+header{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 25px;
+  background: linear-gradient(to right, var(--branco), var(--rosa));
+  width: 978px;
+  height: 737px;
+}
+
+header img{
+  align-self: flex-start;
+  width: 64px;
+  margin-top: 42px;
+  margin-left: 250px;
+  margin-bottom: 80px;
+}
+
+header h1{
+  text-align: left;
+  font-size: 64px;
+  color: var(--escuro);
+  width: 465px;
+  margin-bottom: 20px;
+}
+
+header p{
+  text-align: left;
+  font-size: 16px;
+  font-family: inter regular;
+  color: var(--cinza);
+  width: 465px;
+}
+
+.caixa-superio-lateral{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  top: -670px;
+  left: 845px;
+  width: 544px;
+  height: 500px;
+  background-color: var(--branco);
+  gap: 24px;
+  padding: 24px;
+  box-shadow: 16px 32px 56px 0px var(--rosa);
+}
+.caixa-superio-lateral h1{
+  font-size: 24px;
+  color: var(--escuro);
+  text-align: left;
+  margin-top: 42px;
+}
+.botao-circular{
+  display: flex;
+  position: relative;
+  width: 31px;
+  height: 31px;
+  background-color: var(--branco);
+  border: 1px solid var(--cinza);
+  border-radius: 50%;
+  cursor:pointer;
+  margin-right: 4px;
+  margin-left: 12px;
+  transition: background-color 0.3s, border-color 0.3s; /* Transição suave */
+}
+
+.botao-circular:hover {
+  background-color: var(--blue); /* Cor de fundo azul quando o mouse passa por cima */
+  border-color: var(--cinza); /* Cor da borda azul quando o mouse passa por cima */
+}
+.botao{
+  display: flex;
+  align-items: center;
+}
+
+#botao-imperial{
+  margin-left: 180px;
+}
+
+#metric{
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+#imperial{
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.caixinha{
+  display: flex;
+  align-items:center;
+  margin-left: 20px;
+}
+
+.inputs{
+  display: flex;
+  margin-left: 20px;
+}
+
+.altura input{
+  margin-left: 4px;
+  width: 220px;
+  height: 60px;
+  font-size: 24px;
+  border: 1px solid rgb(177, 177, 177);
+  border-radius: 12px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.peso input{
+  margin-left: 4px;
+  width: 220px;
+  height: 60px;
+  font-size: 24px;
+  border: 1px solid rgb(177, 177, 177);
+  border-radius: 12px;
+  position: absolute;
+}
+
+#centimetros{
+  font-size: 24px;
+  color: var(--blue);
+  position: absolute;
+  top: 245px;
+  left: 235px;
+  font-weight: bold;
+}
+
+#kilos{
+  font-size: 24px;
+  color: var(--blue);
+  position: absolute;
+  top: 245px;
+  left: 510px;
+  font-weight: bold;
+}
+
+.box{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 230px;
+  width: 450px;
+  height: 180px;
+  background-color: var(--blue);
+  margin-top: 100px;
+  margin-left: 25px;
+  line-height: normal;
+  align-items: left;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 200px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 200px;
+}
+
+.descricao{
+  color: var(--branco);
+  font-family: Inter;
+  font-size: 16px;
+  margin-left: 20px;
+  position: absolute;
+  left: 180px;
+  top: 50px;
+  width: 180px;
+}
+
+.box-sushi-desc{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 800px;
+}
+
+.imagem{
+  margin-left: 162px;
+  width: 564px;
+  height: 533px;
+  display: flex;
+  flex-direction: row;
+}
+
+.textinho{
+  display: flex;
+  position: absolute;
+  left: 900px;
+  top: 200px;
+  width: 465px;
+  height: 400px;
+  flex-direction: column;
+}
+
+#grande{
+  font-size: 48px;
+  font-weight: bold;
+  display: flex;
+}
+
+#pequeno{
+  font-size: 16px;
+  margin-top: 40px;
+  font-family: Inter;
+  display: flex;
+}
+
+#vetor{
+  position: absolute;
+  top: 750px;
+  left: 1300px;
+}
+
+.caixa-meio{
+  display: flex;
+  margin-top: 150px;
+  margin-left: 162px;
+  width: 1159px;
+  height: 234px;
+  justify-content: space-between;
+}
+
+
+
+#eating{
+  display: flex;
+  flex-direction: row;
+  width: 64px;
+  height: 64px;
+}
+.caixa-exercicio{
+  margin-left: 180px;
+}
+#exercise{
+  display: flex;
+  flex-direction: row;
+  width: 64px;
+  height: 64px;
+}
+
+.caixa-dormir{
+  margin-left: 180px;
+}
+#sleep{
+  display: flex;
+  flex-direction: column;
+  width: 64px;
+  height: 64px;
+}
+
+.ultima-box{
+  display: flex;
+  width: 1160px;
+  height: 804px;
+}
+
+.caixa-texto{
+  margin-top: 150px;
+  margin-left: 162px;
+  width: 564px;
+}
+
+.caixa-gender{
+  position: absolute;
+  top: 1900px;
+  left: 1050px;
+  width: 365px;
+  height: 200px;
+  border-radius: 16px;
+  background: var(--branco);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  padding: 15px;
+}
+
+#gender{
+  width: 32px;
+  height: 32px;
+  position: absolute;
+}
+
+.caixa-gender span{
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.caixa-gender div{
+  font-size: 16px;
+  font-family: inter;
+  display: flex;
+  margin-top: 40px;
+  margin-left: 10px;
+  width: 300px;
+}
+
+.caixa-age{
+  position: absolute;
+  top: 2200px;
+  left: 750px;
+  width: 365px;
+  height: 200px;
+  border-radius: 16px;
+  background: var(--branco);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  padding: 15px;
+}
+
+#bolo{
+  width: 32px;
+  height: 32px;
+  position: absolute;
+}
+
+.caixa-age span{
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.caixa-age div{
+  font-size: 16px;
+  font-family: inter;
+  display: flex;
+  margin-top: 40px;
+  margin-left: 10px;
+  width: 300px;
+}
+.caixa-muscle{
+  position: absolute;
+  top: 2200px;
+  left: 1200px;
+  width: 365px;
+  height: 200px;
+  border-radius: 16px;
+  background: var(--branco);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  padding: 15px;
+}
+
+#musculo{
+  width: 32px;
+  height: 32px;
+  position: absolute;
+}
+
+.caixa-muscle span{
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.caixa-muscle div{
+  font-size: 16px;
+  font-family: inter;
+  display: flex;
+  margin-top: 40px;
+  margin-left: 10px;
+  width: 300px;
+}
+
+.caixa-pregnancy{
+  position: absolute;
+  top: 2510px;
+  left: 600px;
+  width: 365px;
+  height: 200px;
+  border-radius: 16px;
+  background: var(--branco);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  padding: 15px;
+}
+
+#rosto{
+  width: 32px;
+  height: 32px;
+  position: absolute;
+}
+
+.caixa-pregnancy span{
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.caixa-pregnancy div{
+  font-size: 16px;
+  font-family: inter;
+  display: flex;
+  margin-top: 40px;
+  margin-left: 10px;
+  width: 300px;
+}
+
+.caixa-race{
+  position: absolute;
+  top: 2510px;
+  left: 1050px;
+  width: 365px;
+  height: 200px;
+  border-radius: 16px;
+  background: var(--branco);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  padding: 15px;
+}
+
+#pessoa{
+  width: 32px;
+  height: 32px;
+  position: absolute;
+}
+
+.caixa-race span{
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.caixa-race div{
+  font-size: 16px;
+  font-family: inter;
+  display: flex;
+  margin-top: 40px;
+  margin-left: 10px;
+  width: 300px;
+}
+
+#vetor-direita{
+  width: 120px;
+  height: 140px;
+  position: absolute;
+  left: 480px;
+  top: 2123px;
+}
+    </style>
+  </head>
+  <body>
+    <div class="box-cima"></div>
+      <div class="caixa-superior">
+        <header>
+          <img style="display: flex;" src="game-icons_abstract-082.png" alt="imagem de jogo">
+          <h1>Body Mass Index Calculator</h1>
+          <p>Better understanding your weight in relation to your height using our body mass idnex (MB) calculator. While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall health and well-being.</p>
+        </header>
+      </div>
+
+      <div class="caixa-superio-lateral">
+        <h1>Enter your details below</h1>
+        <div class="botao">
+          <button class="botao-circular" id="botao-metric"></button>
+          <span id="metric">Metric</span>
+          <button class="botao-circular" id="botao-imperial"></button>
+          <span id="imperial">Imperial</span>
+        </div>
+        <div class="caixinha">
+          <span style="font-size: 14px;">Height</span>
+          <span style="font-size: 14px; margin-left: 240px;">Weight</span>
+        </div>
+        <div class="inputs">
+          <div class="altura">
+            <input type="text" id="alturaInput" placeholder="  Height">
+            <div id="centimetros">cm</div>
+          </div>
+          <div class="peso" style="margin-left: 40px;">
+            <input type="text" id="pesoInput" placeholder="  Weight">
+            <div id="kilos">kg</div>
+          </div>
+        </div>
+          <div class="box">
+            <div class="texto" style="color: var(--branco); font-size: 16px; font-weight: bold; margin-top: 45px; margin-left: 20px;">Your BMI is ...</div>
+            <div class="valor" style="color: var(--branco); font-size: 64px; font-weight: bold; margin-left: 20px;">24.1</div>
+            <span class="descricao">Your BMI suggests you're a healthy weight. Your ideal weight is between 63.3kgs - 85.2kgs.</span>
+          </div>
+      </div>
+
+    <img id="vetor" src="vetor-esquerda.png" alt="linha">
+    <div class="box-sushi-desc">
+      <img src="cara-sushi.png" alt="cara comendo sushi" class="imagem">
+      <div class="textinho">
+        <span id="grande">What your BMI result means</span>
+        <span id="pequeno">A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a healthy weight may lower your chances of experiencing health issues later on, such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced fat and sugar content, incorporating ample fruits and vegetables. Additionally, strive for regular physical activity, ideally about 30 minutes daily for five days a week.</span>
+      </div>
+    </div>
+
+    <div class="caixa-meio">
+
+      <div class="caixa-eating">
+        <img id="eating" src="lamen.png" alt="lamen">
+        <h2 style="font-size: 24px;">Healthy eating</h2>
+        <div style="font-size: 16px;">Healthy eating promotes weight control, disease prevention, better digestion, immunity, mental clarity, and mood.</div>
+      </div>
+
+      <div class="caixa-exercicio">
+        <img id="exercise" src="haltere.png" alt="peso">
+        <h2 style="font-size: 24px;">Regular exercise</h2>
+        <div style="font-size: 16px;">Healthy eating promotes weight control, disease prevention, better digestion, immunity, mental clarity, and mood.</div>
+      </div>
+
+      <div class="caixa-dormir">
+        <img id="sleep" src="lua.png" alt="lua">
+        <h2 style="font-size: 24px;">Adequate sleep</h2>
+        <div style="font-size: 16px;">Sleep enhances mental clarity, emotional stability, and physical wellness, promoting overall restoration and rejuvenation.</div>
+      </div>
+    </div>
+
+    <div class="ultima-box">
+      <div class="caixa-texto">
+        <h1 style="font-size: 48px;">Limitations of BMI</h1>
+        <div style="font-size: 16px;">Although BMI is often a practical indicator of healthy weight, it is not suited for every person. Specific groups should carefully consider their BMI outcomes, and in certain cases, the measurement may not be beneficial to use.</div>
+      </div>
+      <div class="caixa-gender">
+        <img id="gender" src="gender.png" alt="genero">
+        <span>Gender</span>
+        <div>The development and body fat composition of girls and boys vary with age. Consequently, a child's age and gender are considered when evaluating their BMI.</div>
+      </div>
+      <div class="caixa-age">
+        <img id="bolo" src="bolo.png" alt="bolo">
+        <span>Age</span>
+        <div>In aging individuals, increased body fat and muscle loss may cause BMI to underestimate body fat content.</div>
+      </div>
+      <div class="caixa-muscle">
+        <img id="musculo" src="bíceps.png" alt="musculo">
+        <span>Muscle</span>
+        <div>BMI may misclassify muscular individuals as overweight or obese, as it doesn't differentiate muscle from fat.</div>
+      </div>
+      <div class="caixa-pregnancy">
+        <img id="rosto" src="rosto.png" alt="rosto">
+        <span>Pregnancy</span>
+        <div>Expectant mothers experience weight gain due to their growing baby. Maintaining a healthy pre-pregnancy BMI is advisable to minimise health risks for both mother and child.</div>
+      </div>
+      <div class="caixa-race">
+        <img id="pessoa" src="pessoa.png" alt="pessoa">
+        <span>Race</span>
+        <div>Certain health concerns may affect individuals of some Black and Asian origins at lower BMIs than others. To learn more, it is advised to discuss this with your GP or practice nurse.</div>
+      </div>
+    </div>
+    <img id="vetor-direita" src="vetordireita.png" alt="vetor-direita">
+  </div>
+  </div>
+  </body>
+</html>
